@@ -1,0 +1,21 @@
+[project]
+name = "avito-retrieval"
+version = "0.1.0"
+description = "Retrieval of Avito help-center articles for user queries (MAP@10)"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "pyarrow>=16",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.2",
+    "rank-bm25>=0.2.2",
+    "snowballstemmer>=2.2",
+    "sentence-transformers>=3.0",
+    "scikit-learn>=1.5",
+]
+
+[dependency-groups]
+dev = [
+    "jupyterlab>=4.2",
+    "ipykernel>=6.29",
+]
